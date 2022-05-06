@@ -1,10 +1,10 @@
 {
 	"name": "gmcompile",
-	"displayName": "gmcompile",
+	"displayName": "Compile GML",
 	"publisher": "samk0",
 	"description": "",
 	"icon": "icon.png",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"repository": {"url": "https://github.com/sam-k0/gmcompile"},
 	"engines": {
 		"vscode": "^1.67.0"
@@ -29,8 +29,8 @@
 			{
 				"compilegml.compilerpath":
 				{
-					"type":["string", null],
-					"default":null,
+					"type":"string",
+					"default":"undefined",
 					"description":"The external compiler location."
 				}
 			}

@@ -9,9 +9,6 @@ const childproc = require('child_process').execFile;
 function activate(context) {
 	//var compilerPath = vscode.workspace.getConfiguration('compilegml').get('compilerpath', __dirname.toString() + "\\ExternalCompiler.exe");
 	//console.log(compilerPath);
-
-	
-
 	console.log('Congratulations, your extension "gmcompile" is now active!');
 	let disposable = vscode.commands.registerCommand('gmcompile.compileGML', function () {
 
@@ -22,6 +19,11 @@ function activate(context) {
 			compilerPath =  __dirname.toString() + "\\ExternalCompiler.exe";
 		}
 		console.log(compilerPath);
+
+		if(compilerPath == null)
+		{
+			vscode.window.showErrorMessage("Compiler path NOT SET! Go to settings and set the path!")
+		}
 
 		vscode.window.showInformationMessage("Set compiler path: "+compilerPath+"\nCan be changed in settings.");
 		//"E:\\Modding\\ExternalCompiler.exe"

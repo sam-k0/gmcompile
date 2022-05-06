@@ -10,7 +10,7 @@ This extension allows you to compile your GMS1.4 games right away from VSCode!
 
 
 ## Requirements
-
+**IMPORTANT**
 If you cannot use this extension right away, you need to install the `ExternalCompiler.exe` from my **GitHub page** [here](https://github.com/sam-k0/quick-compile/releases/tag/1.0).
 
 
