@@ -4,7 +4,7 @@
 	"publisher": "samk0",
 	"description": "",
 	"icon": "icon.png",
-	"version": "0.1.3",
+	"version": "0.1.5",
 	"repository": {"url": "https://github.com/sam-k0/gmcompile"},
 	"engines": {
 		"vscode": "^1.67.0"
@@ -21,6 +21,12 @@
 			{
 				"command": "gmcompile.compileGML",
 				"title": "compile GML"
+			}
+		],
+		"keybindings":[
+			{
+				"command": "gmcompile.compileGML",
+				"key": "ctrl+alt+f5"
 			}
 		],
 		"configuration":{
