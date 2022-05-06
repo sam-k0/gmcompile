@@ -1,15 +1,13 @@
 
 const { exec } = require('child_process');
-const { toEditorSettings } = require('typescript');
 const vscode = require('vscode');
-const childproc = require('child_process').execFile;
+const ef = require('child_process').execFile;
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
 	//var compilerPath = vscode.workspace.getConfiguration('compilegml').get('compilerpath', __dirname.toString() + "\\ExternalCompiler.exe");
 	//console.log(compilerPath);
-	console.log('Congratulations, your extension "gmcompile" is now active!');
 	let disposable = vscode.commands.registerCommand('gmcompile.compileGML', function () {
 
 		// Get the compilerpath
